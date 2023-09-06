@@ -1,0 +1,59 @@
+<html>
+    <head>
+    
+        <title>
+        
+            <%= title %>      
+        </title>
+        <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
+         <!-- all css should be below all other style so that we can override it
+        -->
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1 id ="page-heading">
+            <i class="fa-solid fa-address-book"></i>
+            Contact List</h1>
+         
+            <div class="flex">
+                <form   action="/create-contact" method="POST">
+                    <input class="input" type="text" name="name" placeholder="Enter name" required >
+                    <input class = "input" type="number" name="phone" placeholder="Enter phone" required>
+                     
+                   
+                    <button type="submit">Add Contact</button>
+                 </form>
+             </div>
+        
+
+
+           
+        <div  class="container-fluid flex">
+   
+            <ul>
+                <% for (let i of contact_list){ %>
+                  <li class="contact"> 
+                  <div class="details"> 
+                   <p><%= i.name %></p>
+                   <p><%= i.phone %></p>
+                   <p class="btn"> <a href="delete-contact/<%= i.phone %>"> <i class="fa-solid fa-trash"></i></a></p>
+                   </div>
+
+                </li>
+               <% } %>
+            </ul>
+        </div>
+        <!-- <div>
+        <form action="/create-contact" method="POST">
+            <input type="text" name="name" placeholder="Enter name" required >
+            <input type="number" name="phone" placeholder="Enter phone" required>
+
+            <button type="submit">Add Contact</button>
+         </form>
+         </div> -->
+
+         <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

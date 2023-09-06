@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    background-color: azure;
+
+}
+#page-heading{
+    text-align:center;
+    margin-top:25px;
+    color:grey;
+}
+
+ li{
+    padding:0;
+    list-style:none;
+}
+
+.flex {
+          
+          align-items: center;
+}
+
+.input {
+    display: inline-block;
+}
+.container-fluid{
+   
+    align-items: center;
+    width:400px;
+    margin-left: 360px;
+    align-items: center;
+    border: 2px solid blue;
+    border-radius: 5%;
+    
+    margin-bottom: 5px;
+    background-color: rgb(232, 212, 212);
+}
+form{
+    position: sticky;
+}
+
+.btn i{
+    color: red;
+}
+/*
+.container{
+    padding:3px 10px;
+    border:1px solid white;
+    background-color:blue;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    color:white;
+    display:flex;
+}
+
+.contact .details{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:90%;
+}
+
+#delete-button {
+   
+}
+
+
+
+
+
+
+
+.details {
+    border: 2px solid red;
+}
+.delete-button{
+     border:2px solid black;
+}
+*/
+div {
+     
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center; 
+    
+}
+
+div p{
+
+    color:white;
+    width: 100px;
+    padding:25px;
+    border-radius: 5%;
+    background-color: rgb(50, 50, 245);
+}
